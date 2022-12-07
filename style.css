@@ -30,7 +30,6 @@ footer {
 
 .background {
     background-image: url('./resources/img/img10.png');
-    background-size: contain;
 }
 
 /* Header */
@@ -41,7 +40,7 @@ footer {
     float: left;
 }
 
-nav {
+nav.navbar {
     background: #806783;
     height: 80px;
     width: 100%;
@@ -56,7 +55,7 @@ label.brand {
     font-weight: bold;
 }
 
-nav ul {
+nav.navbar ul {
     float: right;
     margin-right: 20px;
 }
@@ -67,7 +66,7 @@ nav ul li {
     margin: 0 5px;
 }
 
-nav ul li a {
+nav.navbar ul li a {
     color: #fff;
     font-size: 17px;
     padding: 7px 13px;
@@ -94,15 +93,12 @@ a.active, a:hover {
 }
 
 /* Main */
-
-
-/* 
 .galeria {
-    padding-top: 115px;
+    padding-top: 80px;
 }
 
 .galeria__contenedor {
-    position: relative;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -114,7 +110,7 @@ a.active, a:hover {
 } 
 
 .bienvenida{
-    padding: 20px 0;
+    padding: 10px 0;
     color: #2d242e;
 }
 
@@ -125,84 +121,107 @@ a.active, a:hover {
 }
 
 .bienvenida__contenido h1{
-    font-size: 55px;
-    color: #754468;
+    font-size: 50px;
+    color: #fff;
 }
 
 .bienvenida__contenido h2{
     font-size: 35px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-top: 10px;
 }
 
 .muestra__contenido{
     display: grid;
+    position: relative;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
-    padding: 20px 20px;
+    margin: 0 20px;
 }
 
 .muestra__contenido-info1{
     background-color: #806783;
+    margin-right: 10px;
     color: #fff;
     text-align: center;
-    padding-top: 10px;
     font-size: 30px;
     border-radius: 30px;
 }
 
 .muestra__contenido-info1-img{
-    width: 70%;
-}
-
-.muestra__contenido-info1-img{
-    width: 70%;
+    padding-top: 50px;
+    width: 500px;
+    height: 350px;
 }
 
 .muestra__contenido-video iframe{
+    position: absolute;
     border-radius: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
+    height: 100%;     
 }
 
 .muestra__contenido-info2{
     background-color: #806783;
+    margin-left: 10px;
     color: #fff;
     text-align: center;
     padding-top: 10px;
     font-size: 30px;
     border-radius: 30px;
-} */
+}
 
 /* Footer */
-.navfooter {
+footer {
     background-color: #806783;
-    text-align: center;
+    height: 80px;
     width: 100%;
 }
 
-.navfooter__contenido {
+.navfooter {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    text-align: center;
+    margin: 10px;
 }
 
-.navfooter__contenido-social {
+.navfooter__contenido img {
+    width: 50px;
+    margin: 10px;
+    float: left;
+}
+
+.navfooter__contenido a {
+    text-decoration: none;
+}
+
+label.autor {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navfooter__contenido-social img {
-    padding: 0 5px;
-    width: 60px;
-}
-
-.navfooter__contenido-social-autor {
-    font-weight: bold;
-    font-size: 100%;
     color: #fff;
+    font-size: 12px;
+    /* float: left; */
+    align-items: center;
+}
+
+label.brandFooter {
+    color: #fff;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .muestra__contenido{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .muestra__contenido-info1 {
+        font-size: 25px;
+    }       
 }
 
 @media (max-width: 952px) {
@@ -213,6 +232,15 @@ a.active, a:hover {
     nav ul li a {
         font-size: 16px;
     }
+
+    .bienvenida__contenido h1{
+        font-size: 40px;
+    }
+
+    .bienvenida__contenido h2{
+        font-size: 25px;
+    }
+
 }
 
 @media (max-width: 858px) {
@@ -244,4 +272,13 @@ a.active, a:hover {
     #check:checked ~ ul {
         left: 0;
     }
+
+    .bienvenida__contenido h1{
+        font-size: 30px;
+    }
+
+    .bienvenida__contenido h2{
+        font-size: 20px;
+    }
+
 }

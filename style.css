@@ -381,7 +381,8 @@ form .button input:hover {
     height: 100%;
 }
 
-.consolas a {
+.consolas a,
+.perifericos a {
     float: left;
     color: #2D033B;
     text-align: center;

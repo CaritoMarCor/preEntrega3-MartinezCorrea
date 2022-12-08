@@ -348,7 +348,7 @@ form .button input:hover {
     height: 100%;
 }
 
-.sectionContainer {
+.sectionContainer  {
     padding: 20px 0;
 }
 
@@ -420,6 +420,34 @@ form .button input:hover {
 }
 /* Aquí terminan los estilos de products*/
 
+/* Aquí empiezan los estilos de los detalles del producto*/
+.mainDetails {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.sectionDetails{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 100px 20px;
+}
+
+.containerDetails {
+    text-align: center;
+}
+
+.containerDetails a{
+    float: left;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 30px;
+}
+
 /* Responsive*/
 @media (max-width: 1200px) {
     .muestra__contenido{
@@ -487,6 +515,7 @@ form .button input:hover {
 }
 
 @media (max-width: 768px) {
+    
     .checkbtn {
         display: block;
     }
@@ -495,7 +524,7 @@ form .button input:hover {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #806783;
+        background: linear-gradient(135deg, #C147E9, #2D033B);
         top: 80px;
         left: -100%;
         text-align: center;
@@ -545,6 +574,7 @@ form .button input:hover {
 }
 
 @media (max-width: 576px) {
+
     label.brand {
         font-size: 25px;
     }
@@ -633,5 +663,3 @@ form .button input:hover {
         margin: 2px;
     }
 }
-
-/* Responsive contacto */

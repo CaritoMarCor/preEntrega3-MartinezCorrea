@@ -15,81 +15,87 @@
 </head>
 <body class="background">
     <header>
-        <nav class="navbar">
-            <div class="navbar__container">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <a href="./../index.html">
-                    <span><img class="navbar__container-logo" src="./../resources/img/logo.png" alt="Logo"></span>
-                </a>
-                <label class="brand">Pink SetUp</label>
-                <ul>
-                    <li><a href="./../index.html">Inicio</a></li>
-                    <li><a href="./products.html">Productos</a></li>
-                    <li><a href="./contact.html">Contacto</a></li>
-                    <li><a href="./cart.html">Carrito</a></li>
-                </ul>
-            </div>
-        </nav>
+        <section>
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <a href="./../index.html">
+                        <span><img class="navbar__container-logo" src="./../resources/img/logo.png" alt="Logo"></span>
+                    </a>
+                    <label class="brand">Pink SetUp</label>
+                    <ul>
+                        <li><a href="./../index.html">Inicio</a></li>
+                        <li><a href="./products.html">Productos</a></li>
+                        <li><a href="./contact.html">Contacto</a></li>
+                        <li><a href="./cart.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
     </header>
     <main class="mainContainer">
-        <div class="container">
-            <div class="container__title">¿Necesitas Ayuda?</div>
-            <form action="#">
-                <div class="contact">
-                    <div class="contact__details">
-                        <span class="details">Dirigir correo a:</span>
-                        <select name="selectConsulta" id="tipoConsulta" class="consulta">
-                            <option value="consulta1" selected>Escoge tu tipo de consulta</option>
-                            <option value="consulta2">Consulta General</option>
-                            <option value="consulta3">Consulta sobre Productos</option>
-                            <option value="consulta4">Consulta sobre Pagos</option>
-                            <option value="consulta5">Seguimiento de Pedidos</option>
-                            <option value="consulta6">Reclamos</option>
-                            <option value="consulta7">Sugerencias</option>
-                            <option value="consulta8">Cómo ejercer garantía</option>
-                            <option value="consulta9">Otro tipo de Contacto</option>
-                        </select>
+        <section>
+            <div class="container">
+                <div class="container__title">¿Necesitas Ayuda?</div>
+                <form action="#">
+                    <div class="contact">
+                        <div class="contact__details">
+                            <span class="details">Dirigir correo a:</span>
+                            <select name="selectConsulta" id="tipoConsulta" class="consulta">
+                                <option value="consulta1" selected>Escoge tu tipo de consulta</option>
+                                <option value="consulta2">Consulta General</option>
+                                <option value="consulta3">Consulta sobre Productos</option>
+                                <option value="consulta4">Consulta sobre Pagos</option>
+                                <option value="consulta5">Seguimiento de Pedidos</option>
+                                <option value="consulta6">Reclamos</option>
+                                <option value="consulta7">Sugerencias</option>
+                                <option value="consulta8">Cómo ejercer garantía</option>
+                                <option value="consulta9">Otro tipo de Contacto</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Nombre:</span>
+                            <input type="text" placeholder="Ingrese su nombre" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Apellido:</span>
+                            <input type="text" placeholder="Ingrese su apellido" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email:</span>
+                            <input type="email" placeholder="Ingrese su email" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Mensaje:</span>
+                            <textarea cols="30" rows="10" required></textarea>
+                        </div>
                     </div>
-                    <div class="input-box">
-                        <span class="details">Nombre:</span>
-                        <input type="text" placeholder="Ingrese su nombre" required />
+                    <div class="button">
+                        <input type="reset" value="Limpiar">
+                        <input type="submit" value="Enviar">
                     </div>
-                    <div class="input-box">
-                        <span class="details">Apellido:</span>
-                        <input type="text" placeholder="Ingrese su apellido" required />
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Email:</span>
-                        <input type="email" placeholder="Ingrese su email" required />
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Mensaje:</span>
-                        <textarea cols="30" rows="10" required></textarea>
-                    </div>
-                </div>
-                <div class="button">
-                    <input type="reset" value="Limpiar">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-        <nav class="navfooter">
-            <div class="navfooter__contenido">
-                <img src="./../resources/img/visa.png" alt="Visa">
-                <img src="./../resources/img/ig.png" alt="Instagram">
-                <img src="./../resources/img/spotify.png" alt="Spotify">
-                <img src="./../resources/img/wsp.png" alt="WhatsApp">
-                <a href="./../index.html"><img src="./../resources/img/logo.png" alt="Inicio"></a>
-                <a href="./../index.html"> <label for="" class="brandFooter">Pink SetUp</label></a>
-                <!-- <label for="" class="autor">Carolina Martínez Correa - 2022</label>    -->
-                <!-- <p class="navfooter__contenido-autor">Carolina Martínez Correa - 2022</p></a> -->
-            </div>
-        </nav>
+        <section>
+            <nav class="navfooter">
+                <div class="navfooter__contenido">
+                    <img src="./../resources/img/visa.png" alt="Visa">
+                    <img src="./../resources/img/ig.png" alt="Instagram">
+                    <img src="./../resources/img/spotify.png" alt="Spotify">
+                    <img src="./../resources/img/wsp.png" alt="WhatsApp">
+                    <a href="./../index.html"><img src="./../resources/img/logo.png" alt="Inicio"></a>
+                    <a href="./../index.html"> <label for="" class="brandFooter">Pink SetUp</label></a>
+                    <!-- <label for="" class="autor">Carolina Martínez Correa - 2022</label>    -->
+                    <!-- <p class="navfooter__contenido-autor">Carolina Martínez Correa - 2022</p></a> -->
+                </div>
+            </nav>
+        </section>
     </footer>
 </body>
 </html>

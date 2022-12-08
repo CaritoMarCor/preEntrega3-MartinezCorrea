@@ -340,12 +340,16 @@ form .button input:hover {
 /* Aquí terminan los estilos de contact*/
 
 /* Aquí empieza los estilos de products*/
-.mainProductos .sectionContainer{
+.mainProductos {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 110px 20px;
+    padding: 90px 20px;
     height: 100%;
+}
+
+.sectionContainer {
+    padding: 20px 0;
 }
 
 .titleConsolas {

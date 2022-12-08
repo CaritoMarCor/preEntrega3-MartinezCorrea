@@ -352,7 +352,7 @@ form .button input:hover {
     padding: 20px 0;
 }
 
-.titleConsolas {
+.titleProductos {
     text-align: left;
     color: #fff;
     padding: 10px;
@@ -382,7 +382,8 @@ form .button input:hover {
 }
 
 .consolas a,
-.perifericos a {
+.perifericos a,
+.otros a {
     float: left;
     color: #2D033B;
     text-align: center;

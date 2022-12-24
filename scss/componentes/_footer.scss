@@ -1,0 +1,33 @@
+/* Footer */
+footer {
+    background: linear-gradient(-135deg, #2D033B, #C147E9);
+    height: 80px;
+    width: 100%;
+}
+
+.navfooter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.navfooter__contenido img {
+    width: 50px;
+    margin: 10px;
+    float: left;
+}
+
+.navfooter__contenido a {
+    text-decoration: none;
+}
+
+label.brandFooter {
+    color: #fff;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+/* Globales */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto Mono'; }
+
+footer {
+  font-family: 'Roboto Mono'; }
+
+/* Fonts */
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: url("../../resources/font/RobotoMono-Regular.ttf");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: url("../../resources/font/RobotoMono-Bold.ttf");
+  font-weight: bold; }
+
+.background {
+  background-image: url("../../resources/img/img10.png"); }

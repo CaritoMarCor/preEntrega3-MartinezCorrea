@@ -1,0 +1,22 @@
+{
+  "name": "preentrega3martinezcorrea",
+  "version": "1.0.0",
+  "description": "por: Carolina Martinez Correa",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss scss/style.scss style/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaritoMarCor/preEntrega3-MartinezCorrea.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaritoMarCor/preEntrega3-MartinezCorrea/issues"
+  },
+  "homepage": "https://github.com/CaritoMarCor/preEntrega3-MartinezCorrea#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,33 +1,72 @@
-/* Footer */
 footer {
-    background: linear-gradient(-135deg, #2D033B, #C147E9);
-    height: 80px;
+    height: 100%;
     width: 100%;
+
+    .navfooter {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        background: linear-gradient(-135deg, #2D033B, #C147E9);
+
+        &__contenido {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            &-social {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                & img {
+                    width: 40px;
+                    margin: 10px;
+                }
+            }
+
+            &-brand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float: left;
+                text-decoration: none;
+
+                & a {
+                    background: none;
+                }
+
+                & img {
+                    width: 100px;
+                }
+
+                & label {
+                    color: #fff;
+                    font-size: 30px;
+                    font-weight: bold;
+                    padding: 0 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
 
-.navfooter {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-}
+@media (max-width: 576px) {
+    footer {
+        .navfooter {
+            &__contenido {
+                grid-template-columns: repeat(2, 1fr);
 
-.navfooter__contenido img {
-    width: 50px;
-    margin: 10px;
-    float: left;
-}
+                &-brand {
+                    & img {
+                        width: 70px;
+                    }
 
-.navfooter__contenido a {
-    text-decoration: none;
-}
-
-label.brandFooter {
-    color: #fff;
-    font-size: 20px;
-    line-height: 80px;
-    padding: 0 20px;
-    font-weight: bold;
-    float: left;
-    cursor: pointer;
+                    & label {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
 }

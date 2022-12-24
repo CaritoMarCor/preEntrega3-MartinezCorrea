@@ -1,48 +1,55 @@
-/* Header */
-.navbar__container-logo {
-    width: 70px;
-    height: 80px;
-    vertical-align: middle;
-    float: left;
-}
+nav {
+    &.navbar {
+        background: linear-gradient(135deg, #C147E9, #2D033B);
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
 
-nav.navbar {
-    background: linear-gradient(135deg, #C147E9, #2D033B);
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
+        & ul {
+            float: right ;
+            margin-right: 20px;
+        }
 
-label.brand {
-    color: #fff;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 20px;
-    font-weight: bold;
-}
+        & ul li a {
+            color: #fff;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+        }
 
-nav.navbar ul {
-    float: right ;
-    margin-right: 20px;
-}
+        .navbar__container {
+            &-logo {
+               width: 70px;
+               height: 80px;
+               vertical-align: middle;
+               float: left;
+            }
+        
+            label {
+               &.brand {
+                   color: #fff;
+                   font-size: 35px;
+                   line-height: 80px;
+                   padding: 0 20px;
+                   font-weight: bold;
+               }
+           }           
+        }
+    }
 
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
+    & ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
 
-nav.navbar ul li a {
-    color: #fff;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-}
-
-a.active, a:hover {
-    background: #f9d8fb;
-    transition: all 0.5s ease;
+    a {
+        &.active, &:hover {
+            background: #f9d8fb;
+            transition: all 0.5s ease;
+        }
+    }
 }
 
 .checkbtn {
@@ -55,6 +62,25 @@ a.active, a:hover {
     display: none;
 }
 
-#check {
+  #check {
     display: none;
 }
+
+@media (max-width: 576px) {
+    nav {
+        &.navbar {
+            .navbar__container {
+                label {
+                    &.brand {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

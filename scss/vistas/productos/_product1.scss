@@ -1,5 +1,7 @@
 // Estilos detalle de productos
 main {
+    padding-bottom: 2px;
+
     & .container {
         padding-top: 90px;
 
@@ -17,7 +19,6 @@ main {
 
             &-images {
                 display: flex;
-                justify-content: space-between;
                 width: 100%;
                 margin: 20px 0;
 
@@ -36,7 +37,7 @@ main {
 
                     & .images {
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: space-between;
                         width: 100%;
                         margin-top: 15px;
 
@@ -122,30 +123,6 @@ main {
                         display: flex;
                         justify-content: space-evenly;
                         margin-top: 30px;
-
-                        & .cart-btn {
-                            display: grid;
-                            justify-content: center;
-                            height: 35px;
-                            margin: 10px 0;
-
-                            & input {
-                                padding: 0 10px;
-                                height: 100%;
-                                color: #fff;
-                                border: none;
-                                font-size: 16px;
-                                border-radius: 5px;
-                                letter-spacing: 1px;
-                                background: #2D033B;
-                                transition: transform 0.5s;
-                                cursor: pointer;
-                            }
-
-                            & input:hover {
-                                transform: scale(1.1);
-                            }
-                        }
 
                         & .buy-btn {
                             display: grid;

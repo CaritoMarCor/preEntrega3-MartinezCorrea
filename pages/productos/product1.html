@@ -3,29 +3,127 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../style/style.css" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />      
+    <link rel="stylesheet" href="../../style/style.css" />
     <script src="https://kit.fontawesome.com/f4d10b5392.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" href="./../../resources/img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../resources/img/logo.png" type="image/x-icon" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <title>Pink SetUp</title>
 </head>
 <body class="background">
-    <main class="mainDetails">
-        <section class="sectionDetails">
-            <div class="containerDetails">
-                <span>
-                    <a href="./../../index.html">
-                        <img src="./../../resources/img/logo.png" alt="Logo">
-                        <h1>¡Ups! Disculpa las Molestias...</h1>
-                        <h2>Pero esta parte del sitio aun no está lista ☹️</h2>
+    <header>
+        <section>
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <a href="../../index.html">
+                        <span><img class="navbar__container-logo" src="../../resources/img/logo.png" alt="Logo"></span>
                     </a>
-                </span>
+                    <label class="brand">Pink SetUp</label>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../products.html">Productos</a></li>
+                        <li><a href="../contact.html">Contacto</a></li>
+                        <li><a href="../cart.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            <div class="container__products">
+                <div class="container__products-title">
+                    <h1>Nintendo DSI</h1>
+                </div>
+                <div class="container__products-images">
+                    <div class="left">
+                        <div class="big-img">
+                            <img src="../../resources/img/consolas/nintendodspink.png" />
+                        </div>
+                        <div class="images">
+                            <div class="small-img">
+                                <img src="../../resources/img/consolas/nintendodspink.png" onclick="showImg(this.src)"/>
+                            </div>
+                            <div class="small-img">
+                                <img src="../../resources/img/consolas/nintendodspink1.png" onclick="showImg(this.src)"/>
+                            </div>
+                            <div class="small-img">
+                                <img src="../../resources/img/consolas/nintendodspink2.png" onclick="showImg(this.src)"/>
+                            </div>
+                            <div class="small-img">
+                                <img src="../../resources/img/consolas/nintendodspink3.png" onclick="showImg(this.src)"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="tree"> <a href="../../index.html"> Inicio </a> > <a href="../products.html"> Productos </a> > <a href="../productos/product1.html"> Nintendo DSI </a> </div>
+                        <div class="ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$45.990</div>
+                        <div class="quantity">
+                            <p>Cantidad :</p>
+                            <input type="number" min="1" max="3" value="1">
+                        </div>
+                        <div class="description">
+                            <h3>Descripción del Producto</h3>
+                            <p>El producto está reacondicionado, es totalmente funcional y se encuentra en excelente estado. Respaldado por la garantía de Pink SetUp de 90 días.</p>
+                            <p>Este producto de segunda mano ha sido inspeccionado, probado y limpiado profesionalmente por proveedores calificados de Pink SetUp.</p>
+                            <p> Este producto se encuentra en “excelente estado”. La pantalla y la carcasa no muestran signos de daños estéticos visibles a 12 pulgadas de distancia.</p>
+                            <p> Las baterías tienen una capacidad que supera el 80% del producto nuevo equivalente.</p>
+                            <p> Es posible que los accesorios no sean originales, pero serán compatibles y totalmente funcionales. El producto puede venir en una caja genérica.</p>
+                            <p> Este producto es elegible para su reemplazo o reembolso dentro de los 90 días siguientes a la recepción si no funciona de la manera prevista.</p>
+                            <h4>Sobre este artículo</h4>
+                            <p>Incluye: sistema Nintendo DSi, adaptador de CA Nintendo DSi, lápiz capacitivo Nintendo DSI, guía de inicio fácil, manuales (básico y controles) y folleto de soporte</p>
+                        </div>
+                        <div class="btn-box">
+                            <div class="cart-btn">
+                                <input type="submit" value="Agregar al Carro">
+                            </div>
+                            <div class="buy-btn">
+                                <input type="submit" value="Comprar Ahora">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <section>
+            <nav class="navfooter">
+                <div class="navfooter__contenido">
+                    <div class="navfooter__contenido-social">
+                        <img src="../../resources/img/visa.png" alt="Visa">
+                        <img src="../../resources/img/ig.png" alt="Instagram">
+                        <img src="../../resources/img/spotify.png" alt="Spotify">
+                        <img src="../../resources/img/wsp.png" alt="WhatsApp">
+                    </div>
+                    <div class="navfooter__contenido-brand">
+                        <a href="../../index.html"><img src="../../resources/img/logo.png" alt="Inicio"></a>
+                        <a href="../../index.html"> <label for="" class="brandFooter">Pink SetUp</label></a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </footer>
 </body>
+<!-- Script utilizado para poder hacer cambio de las imágenes en el detalle de productos -->
+<script>
+    let bigImg = document.querySelector('.big-img img');
+    function showImg(pic){
+        bigImg.src = pic;
+    }
+</script>
 </html>

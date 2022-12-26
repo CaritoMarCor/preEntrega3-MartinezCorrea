@@ -444,7 +444,7 @@ footer {
       grid-template-columns: repeat(1, 2fr); } }
 
 main {
-  padding-bottom: 2px; }
+  padding-bottom: 5px; }
   main .container {
     padding-top: 90px; }
     main .container__products {

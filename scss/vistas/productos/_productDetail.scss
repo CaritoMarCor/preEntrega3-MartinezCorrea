@@ -1,49 +1,42 @@
 // Estilos detalle de productos
-main {
-    padding-bottom: 5px;
-
-    & .container {
-        padding-top: 90px;
-
-        &__products {
-            padding: 0 150px;
-
-            &-title {
-                text-align: center;
-                color: #fff;                
-                margin: 10px 0;
-                font-size: 25px;
-                background: linear-gradient(135deg, #C147E9, #2D033B);
-                border-radius: 20px;
-            }
-
-            &-images {
-                display: flex;
-                width: 100%;
-                margin: 20px 0;
-
-                & .left {
-                    width: 50%;
-
-                    & .big-img {
-                        width: 100%;
-
-                        & img {
-                            width: inherit;
-                            background: #fff;
-                            border-radius: 20px;
-                        }
+ .container {
+    &__products {
+        &-title {
+            text-align: center;
+            color: #fff;                
+            margin: 10px 0;
+            font-size: 25px;
+            background: linear-gradient(135deg, #C147E9, #2D033B);
+            border-radius: 20px;
+        }
+        
+        &-images {
+            display: flex;
+            width: 100%;
+            margin: 20px 0;
+            
+            & .left {
+                width: 50%;
+                
+                & .big-img {
+                    width: 100%;
+                    
+                    & img {
+                        width: inherit;
+                        background: #fff;
+                        border-radius: 20px;
                     }
-
-                    & .images {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        margin-top: 15px;
-
-                        & .small-img {
-                            width: 115px;
-                            overflow: hidden;
+                }
+                
+                & .images {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 15px;
+                    
+                    & .small-img {
+                        width: 115px;
+                        overflow: hidden;
                             background: #fff;
                             border-radius: 5px;
 
@@ -152,11 +145,10 @@ main {
             }
         }
     }
-}
 
-@media (max-width: 576px) {
-    main {
-        & .container {
+
+@media (max-width: 991px) {
+ .container {
             &__products {
                 padding: 0 20px;
 
@@ -182,4 +174,3 @@ main {
             }
         }       
     }   
-}

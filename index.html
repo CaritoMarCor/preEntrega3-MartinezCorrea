@@ -12,69 +12,113 @@
     <link rel="shortcut icon" href="./resources/img/logo.png" type="image/x-icon" />
     <!-- Animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="description" content="¡Bienvenido a Pink SetUp! el sitio donde encontrarás los implementos gamers más rosados y tiernos para tu setup"/>
+    <meta name="keywords" content="consolas, periféricos, mouse, teclado, rosado, tierno, cute, otros, audífonos, nintendo, razer, quartz, coral, pink, kitty, orejas, ps"/>
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Carolina Martínez Correa" />
     <title>Pink SetUp</title>
 </head>
 
 <body class="background">
     <header>
-        <section>
-            <nav class="navbar">
-                <div class="navbar__container">
-                    <input type="checkbox" id="check" />
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <a href="./index.html">
-                        <span><img class="navbar__container-logo" src="./resources/img/logo.png" alt="Logo"></span>
-                    </a>
-                    <label class="brand">Pink SetUp</label>
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/products.html">Productos</a></li>
-                        <li><a href="./pages/contact.html">Contacto</a></li>
-                        <li><a href="./pages/cart.html">Carrito</a></li>
-                    </ul>
-                </div>
-            </nav>
+      <section>
+        <!-- Navbar desde Bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-light n-menu">
+          <div class="container-fluid n-menu-contenido">
+            <a class="navbar-brand n-menu-contenido-brand" href="./index.html">
+              <span><img class="n-menu-contenido-brand-logo" src="./resources/img/logo.png" alt="Logo"></span>
+              <span class="n-menu-contenido-brand-text">Pink SetUp</span>
+            </a>
+            <button class="navbar-toggler b-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon b-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse n-collapse" id="navbarNav">
+              <ul class="navbar-nav n-collapse-ul">
+                <li class="nav-item n-collapse-ul-li">
+                  <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item n-collapse-ul-li">
+                  <a class="nav-link" href="./pages/products.html">Productos</a>
+                </li>
+                <li class="nav-item n-collapse-ul-li">
+                  <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item n-collapse-ul-li">
+                  <a class="nav-link" href="./pages/cart.html">Carrito</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </section>
     </header>
-    <main class="mainIndex">
-        <section class="galeria">
-            <div class="galeria__contenedor" data-aos="zoom-in">
-                <img class="galeria__contenedor-foto" src="./resources/img/img14.jpg" alt="foto1">
+    <!-- Inicio del Main -->
+    <main>
+      <!-- Sección del carrusel desde Bootstrap -->
+      
+      <section class="sectionCarousel">
+        <div id="carouselExampleControls" class="carousel slide c-slide" data-bs-ride="carousel">
+          <div class="carousel-inner c-slide-position">
+            <div class="carousel-item active c-slide-position-item">
+              <img src="./resources/img/img1.png" class="d-block c-slide-position-item-img" alt="...">
             </div>
-        </section>
-
-        <section class="bienvenida">
-            <div class="bienvenida__contenido">
-                <h2>¿Te gusta el rosado y además jugar?</h2>
-                <h1>¡Bienvenido a Pink Set Up!</h1>
+            <div class="carousel-item c-slide-position-item">
+              <img src="./resources/img/img2.png" class="d-block c-img" alt="Setup1">
             </div>
-        </section>
-
-        <section class="muestra">
-            <div class="muestra__contenido" data-aos="zoom-in">
-                <article class="muestra__contenido-info1">
-                    <a href="./pages/products.html">
-                        <h1>Productos</h1>
-                        <p>Gran selección y variedad de productos rosados para ti</p>
-                        <img class="muestra__contenido-info1-img" src="./resources/img/sailor-moon-1.png" alt="producto">
-                    </a>
-                </article>
-                <article class="muestra__contenido-video">
-                    <iframe  src="https://www.youtube.com/embed/M_2lmnZhfNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                </article>
-                <article class="muestra__contenido-info2">
-                    <a href="./pages/contact.html">
-                        <h1>Contacto</h1>
-                        <p>Cotiza sin miedo puedes contactarnos a través de nuestras redes sociales o en la pestaña Contacto</p>
-                        <img class="muestra__contenido-info2-img" src="./resources/img/logo2.png" alt="gato">
-                    </a>
-                </article>
+            <div class="carousel-item c-slide-position-item">
+              <img src="./resources/img/img3.png" class="d-block c-img" alt="Setup2">
             </div>
-        </section>
+            <div class="carousel-item c-slide-position-item">
+              <img src="./resources/img/img4.png" class="d-block c-img" alt="Setup3">
+            </div>
+            <div class="carousel-item c-slide-position-item">
+              <img src="./resources/img/img5.png" class="d-block c-img" alt="Setup4">
+            </div>
+          </div>
+          <button class="carousel-control-prev c-slide-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next c-slide-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+ 
+      <!-- Texto bienvenida -->
+      <section class="sectionWelcome">
+        <div class="welcome__contenido">
+          <h2>¿Te gusta el rosado y además jugar?</h2>
+          <h1>¡Bienvenido a Pink SetUp!</h1>
+        </div>
+      </section>
+      <!-- Contenido informativo -->
+      <section class="muestra">
+        <div class="muestra__contenido" data-aos="zoom-in">
+          <article class="muestra__contenido-info1">
+            <a href="./pages/products.html">
+              <p class="muestra__contenido-info1-titulo">Productos</p>
+              <p>Gran selección y variedad de productos rosados para ti</p>
+              <img class="muestra__contenido-info1-img" src="./resources/img/consolas/gameboyadvance.png" alt="producto">
+            </a>
+          </article>
+          <article class="muestra__contenido-video">
+            <iframe  src="https://www.youtube.com/embed/M_2lmnZhfNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+          </article>
+          <article class="muestra__contenido-info2">
+            <a href="./pages/contact.html">
+              <p class="muestra__contenido-info2-titulo">Contacto</p>
+              <p>Puedes contactarnos a través de nuestras redes sociales o en la pestaña Contacto</p>
+              <img class="muestra__contenido-info2-img" src="./resources/img/logo2.png" alt="gato">
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- Fin del Main -->
     </main>
+    <!-- Inicio del Footer -->
     <footer>
         <section>
             <nav class="navfooter">
@@ -93,6 +137,7 @@
             </nav>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 <!-- Va con la animación -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
